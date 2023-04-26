@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./assets/calculadora.png">
+  <title>Gestor de Finanças</title>
+</head>
+<body>
+  <main>
+    <br>
+    <br>
+   <div class="resume">
+      <div style="color: white">
+        Entradas: R$
+        <span class="incomes">0.00</span>
+      </div>
+      <div style="color: white">
+        Saídas: R$
+        <span class="expenses">0.00</span>
+      </div>
+      <div style="color: white">
+        Total: R$
+        <span class="total">0.00</span>
+      </div >
+    </div>
+    <br>
+    <br>
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc" style="color: white">Descrição</label>
+        <input type="text" id="desc" />
+      </div>
+      <div class="divAmount">
+        <label for="amount" style="color: white">Valor</label>
+        <input type="number" id="amount" />
+      </div>
+      <div class="divType">
+        <label for="type" style="color: white">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <br>
+      <button id="btnNew" style="color: white">Adicionar</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="divTable">
+      <table>
+        <br>
+        <br>
+        <br>
+        <thead>
+          <tr>
+            <th style="color: white">Descrição</th>
+            <th class="columnAmount" style="color: white">Valor</th>
+            <th class="columnType" style="color: white">Tipo</th>
+            <th class="columnAction" style="color: white"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </main>  
+
+  <script src="./script.js">
+   
+  </script>
+</body>
+</html>
